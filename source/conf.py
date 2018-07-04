@@ -25,6 +25,10 @@ project = 'OpenNebula'
 copyright = '2018, OpenNebula Systems <contact@opennebula.org>'
 author = 'OpenNebula Systems'
 
+site_conf = yaml.load(os.popen('git show origin/master:source/site_conf.yml'))
+versions = site_conf['versions']
+downloads = site_conf['downloads']
+
 # The short X.Y version
 version = '5.6'
 # The full version, including alpha/beta/rc tags
