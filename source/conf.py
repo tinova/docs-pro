@@ -17,6 +17,8 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 import sys
+import yaml
+import os
 
 import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
@@ -24,6 +26,10 @@ import sphinx_rtd_theme
 project = 'OpenNebula'
 copyright = '2018, OpenNebula Systems <contact@opennebula.org>'
 author = 'OpenNebula Systems'
+
+site_conf = yaml.load(os.popen('git show origin/one-5.6:source/site_conf.yml'))
+versions = site_conf['versions']
+downloads = site_conf['downloads']
 
 # The short X.Y version
 version = '5.6'
