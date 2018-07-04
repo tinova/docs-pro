@@ -23,13 +23,15 @@ import os
 import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
+sys.path.append(os.path.abspath('ext'))
+
 project = 'OpenNebula'
 copyright = '2018, OpenNebula Systems <contact@opennebula.org>'
 author = 'OpenNebula Systems'
 
 site_conf = yaml.load(os.popen('git show origin/one-5.6:source/site_conf.yml'))
 versions = site_conf['versions']
-downloads = site_conf['downloads']
+#downloads = site_conf['downloads']
 
 # The short X.Y version
 version = '5.6'
@@ -46,7 +48,7 @@ release = '5.6'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx-prompt']
+extensions = ['sphinx-prompt','versions']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
