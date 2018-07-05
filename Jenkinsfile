@@ -1,6 +1,8 @@
 node {
          echo 'Hello World'
-         git url: 'https://github.com/OpenNebula/docs-pro'
+         sh 'echo $BRANCH_NAME'
+         BRANCH_NAME
+         //git url: 'https://github.com/OpenNebula/docs-pro'
          sh 'echo "pwd"'
          sh 'pwd'
          sh 'ls'
