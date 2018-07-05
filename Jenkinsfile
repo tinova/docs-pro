@@ -1,5 +1,7 @@
 node {
          echo 'Hello World'
+         echo 'checkout'
+         checkout scm
          sh 'echo $BRANCH_NAME'
          env.BRANCH_NAME
          //git url: 'https://github.com/OpenNebula/docs-pro'
