@@ -6,6 +6,6 @@ node {
         checkout scm
         sh 'printenv'
         sh 'make html'
-        sh 'rsync -avP -e "ssh -i /home/test/id_rsa" ./build/html/ root@10.10.0.53:/var/www/html/$version'
+        sh 'rsync -avP -e "ssh -i /home/test/id_rsa" ./build/html/ root@10.10.0.53:/var/www/html/$VERSION'
     //}
 }
