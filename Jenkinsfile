@@ -1,6 +1,6 @@
 node {
          echo 'Hello World'
-         //git url: 'https://github.com/OpenNebula/docs-pro'
+         git url: 'https://github.com/OpenNebula/docs-pro'
          sh 'echo "pwd"'
          sh 'pwd'
          sh 'ls'
