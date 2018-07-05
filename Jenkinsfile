@@ -1,11 +1,13 @@
 node {
     environment {
-        VERSION = sh 'echo $GIT_BRANCH | cut -d "-" -f 2'
+        VERSION = sh 'echo $BRANCH_NAME | cut -d "-" -f 2'
     }
     //stage {
         checkout scm
         sh 'printenv'
         sh 'make html'
-        sh 'rsync -avP -e "ssh -i /home/test/id_rsa" ./build/html/ root@10.10.0.53:/var/www/html/$VERSION'
+        sh 'echo $BRANCH_NAME'
+        sh 'echo `echo $BRANCH_NAME | cut -d "-" -f 2`'
+        sh 'rsync -avP -e "ssh -i /home/test/id_rsa" ./build/html/ root@10.10.0.53:/var/www/html/`echo $BRANCH_NAME | cut -d "-" -f 2`'
     //}
 }
