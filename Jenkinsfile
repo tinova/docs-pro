@@ -1,15 +1,11 @@
 node {
-         echo 'Hello World'
-         echo 'checkout'
-         checkout scm
-         sh 'echo $BRANCH_NAME'
-         env.BRANCH_NAME
-         //git url: 'https://github.com/OpenNebula/docs-pro'
-         sh 'printenv'
-         sh 'echo "pwd"'
-         sh 'pwd'
-         sh 'ls'
-         sh 'git branch -a'
-         sh 'echo $GIT_BRANCH'
-         sh 'echo $GIT_URL'
+    environment {
+        VERSION = sh 'echo $GIT_BRANCH | cut -d "-" -f 2'
+    }
+    stage {
+        checkout scm
+        sh 'printenv'
+        make html
+        rsync -avP -e "ssh -i /home/test/id_rsa" ./build/html/ root@10.10.0.53:/var/www/html/$version
+    }
 }
