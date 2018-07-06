@@ -38,8 +38,10 @@ version = '5.6'
 # The full version, including alpha/beta/rc tags
 release = '5.6'
 
+#Specific options for generating changelog, please use only single quotes
 milestone = 'Release 5.6'
 link = 'true'
+repo = 'one'
 
 # -- General configuration ---------------------------------------------------
 
