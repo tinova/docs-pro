@@ -10,3 +10,4 @@ OpenNebula CLI Extensions
    Overview <overview>
    Installation <install>
    OneZone ServerSync extension <onezone_serversync>
+   Changelog <changelog>

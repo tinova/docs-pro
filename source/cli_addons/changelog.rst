@@ -1,0 +1,101 @@
+Resolved Issues in 5.6
+--------------------------------------------------------------------------------
+
+The following features has been added in 5.6
+
+- `Dummy driver should create users with dummy as a default driver <https://api.github.com/repos/OpenNebula/one/issues/2244>`__.
+- `Live Migration --enforce default in Sunstone <https://api.github.com/repos/OpenNebula/one/issues/2202>`__.
+- `Differents monitor intervals <https://api.github.com/repos/OpenNebula/one/issues/2192>`__.
+- `Do `onehost flush` command more configurable <https://api.github.com/repos/OpenNebula/one/issues/2153>`__.
+- `Configurable "Keep me logged in" option in Sunstone <https://api.github.com/repos/OpenNebula/one/issues/2146>`__.
+- `Docker Machine plugin packaging <https://api.github.com/repos/OpenNebula/one/issues/2065>`__.
+- `Configurable cleanup of empty bridge <https://api.github.com/repos/OpenNebula/one/issues/2043>`__.
+- `Extend access checks to Security Groups referenced by a VM <https://api.github.com/repos/OpenNebula/one/issues/1976>`__.
+- `Non-persistent IMAGE even when DEFAULT_IMAGE_PERSISTENT_NEW=YES <https://api.github.com/repos/OpenNebula/one/issues/1960>`__.
+- `onezone show $zone_id -x show HA & FEDERATION SYNC STATUS <https://api.github.com/repos/OpenNebula/one/issues/1943>`__.
+- `Configurable XMLRPC connection timeout in Ruby OCA  <https://api.github.com/repos/OpenNebula/one/issues/1918>`__.
+- `Driver fs_lvm. method resize has been implemented <https://api.github.com/repos/OpenNebula/one/issues/1917>`__.
+- `setuid/setgid for VM Templates <https://api.github.com/repos/OpenNebula/one/issues/1913>`__.
+- `Allow to resize a disk in the cloud view <https://api.github.com/repos/OpenNebula/one/issues/1910>`__.
+- `Setuid/Setgid for VM Templates <https://api.github.com/repos/OpenNebula/one/issues/1897>`__.
+- `Full debug XMLRPC parameter information in log <https://api.github.com/repos/OpenNebula/one/issues/1885>`__.
+- `Allow vlan range notation in ovs <https://api.github.com/repos/OpenNebula/one/issues/1879>`__.
+- `Let ACL VDC rules to be configurable by admins. <https://api.github.com/repos/OpenNebula/one/issues/1872>`__.
+- `Ask user to overwrite login token <https://api.github.com/repos/OpenNebula/one/issues/1871>`__.
+- `LDAP authentication server groups <https://api.github.com/repos/OpenNebula/one/issues/1870>`__.
+- `Support base EL7 qemu-kvm <https://api.github.com/repos/OpenNebula/one/issues/1867>`__.
+- `vCenter cache improvements <https://api.github.com/repos/OpenNebula/one/issues/1835>`__.
+- `Review network drivers parameters <https://api.github.com/repos/OpenNebula/one/issues/1807>`__.
+- `vcenter import datastores improved <https://api.github.com/repos/OpenNebula/one/issues/1804>`__.
+- `Evaluate the effect of re-introducing oned cache of pool objects <https://api.github.com/repos/OpenNebula/one/issues/1792>`__.
+- `Add support for IOPs attributes for attach disks <https://api.github.com/repos/OpenNebula/one/issues/1769>`__.
+- `Disable PolicyKit on C7 KVM nodes <https://api.github.com/repos/OpenNebula/one/issues/1768>`__.
+- `Improve vcenter driver cache <https://api.github.com/repos/OpenNebula/one/issues/1767>`__.
+- `vcenter vm, get_one_item with id <https://api.github.com/repos/OpenNebula/one/issues/1757>`__.
+- `Configurable VNC import options <https://api.github.com/repos/OpenNebula/one/issues/1754>`__.
+- `Configuration option in sunstone views to hide monitoring and attribute information <https://api.github.com/repos/OpenNebula/one/issues/1742>`__.
+- `Improve systemd service scripts <https://api.github.com/repos/OpenNebula/one/issues/1737>`__.
+- `Add state index to VM pool to speedup state based queries <https://api.github.com/repos/OpenNebula/one/issues/1709>`__.
+- `Support shared TM with local system DS <https://api.github.com/repos/OpenNebula/one/issues/1694>`__.
+- `Ceph EC support <https://api.github.com/repos/OpenNebula/one/issues/1685>`__.
+- `Integrate Addon of hybrid cloud into One  <https://api.github.com/repos/OpenNebula/one/issues/1661>`__.
+- `Vcenter driver Import rework <https://api.github.com/repos/OpenNebula/one/issues/1653>`__.
+- `Update gem dependencies <https://api.github.com/repos/OpenNebula/one/issues/1641>`__.
+- `Make ipset size configurable <https://api.github.com/repos/OpenNebula/one/issues/1574>`__.
+- `add DEFAULT_ATTACH_IO when attaching a disk <https://api.github.com/repos/OpenNebula/one/issues/1570>`__.
+- `Update bower dependencies <https://api.github.com/repos/OpenNebula/one/issues/1565>`__.
+- `Time relative scheduled actions <https://api.github.com/repos/OpenNebula/one/issues/1548>`__.
+- `Display Quotas in Cloud View <https://api.github.com/repos/OpenNebula/one/issues/1546>`__.
+- `Better Cloud View admin tabs <https://api.github.com/repos/OpenNebula/one/issues/1545>`__.
+- `Search on vCenter resources import <https://api.github.com/repos/OpenNebula/one/issues/1543>`__.
+- `Adjust vCenter Network Model <https://api.github.com/repos/OpenNebula/one/issues/1541>`__.
+- `Import multi-cluster networks <https://api.github.com/repos/OpenNebula/one/issues/1538>`__.
+
+The following bugs has been solved in 5.6
+
+- `PHYDEV should not be mandatory for ovswitch <https://api.github.com/repos/OpenNebula/one/issues/2241>`__.
+- `Imposible to update user group settings <https://api.github.com/repos/OpenNebula/one/issues/2225>`__.
+- `Zero LVM space <https://api.github.com/repos/OpenNebula/one/issues/2217>`__.
+- `Action script fs_lvm/resize not executable <https://api.github.com/repos/OpenNebula/one/issues/2212>`__.
+- `Problem with zonepool after upgrade <https://api.github.com/repos/OpenNebula/one/issues/2209>`__.
+- `Oneflow not working after upgrading from 5.4.* to 5.5.80 <https://api.github.com/repos/OpenNebula/one/issues/2198>`__.
+- `Current snapshot is backing itself (backing store is self-referential) <https://api.github.com/repos/OpenNebula/one/issues/2189>`__.
+- `Unable to update IPv6 Only network attributes <https://api.github.com/repos/OpenNebula/one/issues/2188>`__.
+- `Consistent state naming for VMs <https://api.github.com/repos/OpenNebula/one/issues/2160>`__.
+- `Show IPv6 Address in Network tab Sunstone when IPv6 only <https://api.github.com/repos/OpenNebula/one/issues/2139>`__.
+- `incorrect error message for file not found <https://api.github.com/repos/OpenNebula/one/issues/2109>`__.
+- `fs datastore export with valid metadata <https://api.github.com/repos/OpenNebula/one/issues/2101>`__.
+- `oneuser passwd command error message improvement <https://api.github.com/repos/OpenNebula/one/issues/2064>`__.
+- `XML containing single quotes in any attribute may break DB related tools <https://api.github.com/repos/OpenNebula/one/issues/2042>`__.
+- `Missing xmlrpc gem on Ruby >= 2.4 <https://api.github.com/repos/OpenNebula/one/issues/2017>`__.
+- `Drivers' action scripts may not fail on error <https://api.github.com/repos/OpenNebula/one/issues/2010>`__.
+- `Systemd service too aggressive with restart on failure <https://api.github.com/repos/OpenNebula/one/issues/2009>`__.
+- `SSH or LocalCommand hangs on large stderr <https://api.github.com/repos/OpenNebula/one/issues/1964>`__.
+- `vCenter morefs (Managed Object References) are not correctly checked <https://api.github.com/repos/OpenNebula/one/issues/1951>`__.
+- `Sunstone thinks the unit of the image size is GB when it's actually MB. <https://api.github.com/repos/OpenNebula/one/issues/1949>`__.
+- `[bug] Sunstone ignored the SIZE parameter of a DISK in a VM template <https://api.github.com/repos/OpenNebula/one/issues/1937>`__.
+- `opennebula deletion of logdb table is not chunked and delays startup <https://api.github.com/repos/OpenNebula/one/issues/1927>`__.
+- `Import wild VMs in vCenter shouldn't check datastore capacity <https://api.github.com/repos/OpenNebula/one/issues/1880>`__.
+- `Tokens should not be used to authenticate with external drivers <https://api.github.com/repos/OpenNebula/one/issues/1869>`__.
+- `Button for vnc and spice is not displayed <https://api.github.com/repos/OpenNebula/one/issues/1851>`__.
+- `Add support for PowerPC CPUs <https://api.github.com/repos/OpenNebula/one/issues/1850>`__.
+- `Improve error message when Import Wild or VM Template with disks without back reference <https://api.github.com/repos/OpenNebula/one/issues/1841>`__.
+- `Improve error messages in vCenter driver <https://api.github.com/repos/OpenNebula/one/issues/1826>`__.
+- `Offending XML with provided XSD <https://api.github.com/repos/OpenNebula/one/issues/1821>`__.
+- `vcenter monitoring <https://api.github.com/repos/OpenNebula/one/issues/1793>`__.
+- `Mysql database name problem <https://api.github.com/repos/OpenNebula/one/issues/1741>`__.
+- `EUI-64 generate wrong host identifiers  <https://api.github.com/repos/OpenNebula/one/issues/1729>`__.
+- `VM import should take into account state <https://api.github.com/repos/OpenNebula/one/issues/1715>`__.
+- `CPU model and live migration problem <https://api.github.com/repos/OpenNebula/one/issues/1688>`__.
+- `VM cannot be assigned to vmgroup/roles in firefox <https://api.github.com/repos/OpenNebula/one/issues/1674>`__.
+- `Some daemon logs are not rotated <https://api.github.com/repos/OpenNebula/one/issues/1672>`__.
+- `Can't resize vm disk - [one.vm.diskresize] New disk size has to be greater than current one <https://api.github.com/repos/OpenNebula/one/issues/1671>`__.
+- `Fix the build for manual pages <https://api.github.com/repos/OpenNebula/one/issues/1665>`__.
+- `Check pre-migrate for SUSPENDED VMs <https://api.github.com/repos/OpenNebula/one/issues/1657>`__.
+- `ip6tables not in sudoers <https://api.github.com/repos/OpenNebula/one/issues/1628>`__.
+- ` Resize disk leads to qcow2 corruption  <https://api.github.com/repos/OpenNebula/one/issues/1585>`__.
+- `onedb fsck breaks the resources when they contain non-ASCII chars <https://api.github.com/repos/OpenNebula/one/issues/1557>`__.
+- `opennebula should not import uplink portgroups <https://api.github.com/repos/OpenNebula/one/issues/1531>`__.
+- `Monitoring error. Any stderr from `du -mL` command should be filtered. <https://api.github.com/repos/OpenNebula/one/issues/1525>`__.
+- `Monitoring error. Any stderr from `virsh domblkstat` command should be filtered. <https://api.github.com/repos/OpenNebula/one/issues/1524>`__.
+- `Improve Network Topology <https://api.github.com/repos/OpenNebula/one/issues/1517>`__.

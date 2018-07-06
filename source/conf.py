@@ -38,6 +38,8 @@ version = '5.6'
 # The full version, including alpha/beta/rc tags
 release = '5.6'
 
+milestone = 'Release 5.6'
+link = 'true'
 
 # -- General configuration ---------------------------------------------------
 
