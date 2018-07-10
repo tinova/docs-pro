@@ -8,5 +8,6 @@ OpenNebula CLI Extensions
    :maxdepth: 2
 
    Overview <overview>
+   Changelog <changelog>
    Installation <install>
    OneZone ServerSync extension <onezone_serversync>
