@@ -1,9 +1,7 @@
 ---
 versions:
 - - "5.6"
-  - http://10.10.0.53/5.6
-- - "5.4"
-  - http://10.10.0.53/5.4
+  - http://docs.opennebula.pro/5.6
 
 downloads:
 - - "Intro and Release Notes"
