@@ -5,7 +5,6 @@ Overview
 CLI extensions is a feature intended to enhance OpenNebula's CLI for customers. This addon will add several subcommands to existing OpenNebula's CLI commands.
 
 
-
 How Should I Read This Chapter
 ================================================================================
 
