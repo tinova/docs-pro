@@ -17,7 +17,7 @@ ARGV.options do |opts|
   script_name = File.basename($0)
   opts.banner = 'Recover github issues from milestone'
   opts.define_head("Usage: #{script_name} [OPTIONS]",
-                   'Example', "#{script_name} [-l] -m \"Milestone name\" | -f \"path to conf.py file\" ")
+                   'Example', "#{script_name} [-l] -m \"Milestone name\" -r project_repo -v release_version | -f \"path to conf.py file\" ")
   opts.separator('')
   opts.on('-m', '--milestone STR', String, "Milestone name" )  { |v| options[:milestone] = v }
   opts.on('-r', '--repo STR', String, "Repository" )  { |v| options[:repo] = v }
@@ -60,7 +60,7 @@ if options.key?(:conf)
     options[:link] = true if options[:link][0][0] == "true"
 end
 
-milestones_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/milestones?per_page=200")
+milestones_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/milestones?per_page=100")
 @milestones = JSON.parse(Net::HTTP.get(milestones_uri))
 milestone_number = get_milestone_number(options[:milestone])
 issues_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/issues?per_page=100&state=closed&milestone=#{milestone_number}")
