@@ -1,5 +1,5 @@
 ================================================================================
-OpenNebula 5.6 Extensions Documentation
+OpenNebula |version| Extensions Documentation
 ================================================================================
 
 .. _entry_point:

@@ -4,7 +4,7 @@
 OneZone ServerSync extension
 ================================================================================
 
-This addon is designed to help administrators to sync OpenNebula's configurations across different federated and High Availability zones. It will first check for inconsistencies between local and remote configuration files inside **/etc/one/** directory. In case they exist, the local version will be replaced by the remote version and only the affected service will be restarted. Whole configuration files will be replaced with the only exception of **/etc/one/oned.conf**. In this case, the local **FEDERATION** configuration will be maintained, but the rest of the content will be overwritten. A backup will be made inside **/etc/one/** before replacing any file.
+This addon is designed to help administrators to sync OpenNebula's configurations across different federated and High Availability (HA) zones and fix lagging nodes in HA environments. It will first check for inconsistencies between local and remote configuration files inside **/etc/one/** directory. In case they exist, the local version will be replaced by the remote version and only the affected service will be restarted. Whole configuration files will be replaced with the only exception of **/etc/one/oned.conf**. In this case, the local **FEDERATION** configuration will be maintained, but the rest of the content will be overwritten. A backup will be made inside **/etc/one/** before replacing any file.
 
 This script can also be used to replace your local database with a remote version. Useful if your HA node ----- was left behind.
 
