@@ -37,7 +37,6 @@ versions = site_conf['versions']
 github_repo   = "https://github.com/OpenNebula/docs-pro"
 github_branch = "master"
 
-github_url  =   "https://github.com/OpenNebula/docs-pro"
 
 # The short X.Y version
 version = '5.6'
