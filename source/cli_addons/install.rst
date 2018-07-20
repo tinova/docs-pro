@@ -7,7 +7,11 @@ You should already have `enterprise repositories <https://support.opennebula.pro
 Installing on Ubuntu
 ================================================================================
 
+# apt install opennebula-cli-extensions
+
 Installing on CentOS
 ================================================================================
 
-yum install cli-extensions...
+# yum install opennebula-cli-extensions
+
+
