@@ -12,6 +12,6 @@ def create_versions(app, docname, templatename, ctx, doctree):
 
     ctx['display_github'] = True
     ctx['github_user']    = 'OpenNebula'
-    ctx['github_repo']    = 'docs'
+    ctx['github_repo']    = 'docs-pro'
     ctx['github_version'] = app.builder.env.config['github_version']
     ctx['conf_py_path']   = 'source/'
