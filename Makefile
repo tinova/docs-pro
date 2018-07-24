@@ -29,7 +29,7 @@ help:
 
 html:
 	ruby generate_index.rb > source/toc.html
-	#ruby get_issues.rb -c source/conf.py > source/cli_addons/changelog.rst
+	ruby get_issues.rb -c source/conf.py > source/cli_addons/changelog.rst
 	# $(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	# @$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	@$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)/html" $(SPHINXOPTS) $(O)
@@ -38,20 +38,7 @@ html:
 
 latexpdf:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
-	@echo "Cleaning invalid chars..."
-
-	# ↑ => |
-	$(SED) -i 's/↑/|/' $(BUILDDIR)/latex/*.tex
-
-	# \textuparrow => |
-	$(SED) -i 's%\\textuparrow%|%' $(BUILDDIR)/latex/*.tex
-
-	# C:\ => C:\\
-	$(PERL) -i -pe '!m/textbackslash/ && s%C:\\%C:\\\\%g' $(BUILDDIR)/latex/*.tex
-
-	# \hline<stuff>\n => \hline\n<stuff>\n
-	$(PERL) -i -pe 'BEGIN{undef ;} s/^\\hline(\w+)/\\hline\n$1/smg' $(BUILDDIR)/latex/*.tex
-
 	@echo "Running LaTeX files through pdflatex..."
 	$(MAKE) -C $(BUILDDIR)/latex all-pdf
 	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
+

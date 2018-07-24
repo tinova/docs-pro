@@ -31,7 +31,7 @@ author = 'OpenNebula Systems'
 
 site_conf = yaml.load(os.popen('git show origin/one-5.6:source/site_conf.yml'))
 versions = site_conf['versions']
-#downloads = site_conf['downloads']
+downloads = site_conf['downloads']
 
 # Github path
 github_repo   = "https://github.com/OpenNebula/docs-pro"
@@ -162,9 +162,10 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'OpenNebula_Extensions.tex', 'OpenNebula Extensions Documentation',
-     'OpenNebula Systems', 'manual'),
+  ('index', 'one-addons-' + release + '.tex', 'vOneCloud Documentation',
+   'OpenNebula Systems', 'manual'),
 ]
+
 
 
 # -- Options for manual page output ------------------------------------------

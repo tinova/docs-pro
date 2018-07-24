@@ -4,13 +4,6 @@ versions:
   - http://docs.opennebula.pro/5.6
 
 downloads:
-- - "Intro and Release Notes"
-  - "http://docs.opennebula.org/pdf/5.5/opennebula_5.5_intro_release_notes.pdf"
-- - "Deployment Guide"
-  - "http://docs.opennebula.org/pdf/5.5/opennebula_5.5_deployment_guide.pdf"
-- - "Operation Guide"
-  - "http://docs.opennebula.org/pdf/5.5/opennebula_5.5_operation_guide.pdf"
-- - "Advanced Components"
-  - "http://docs.opennebula.org/pdf/5.5/opennebula_5.5_advanced_components_guide.pdf"
-- - "Integration Guide"
-  - "http://docs.opennebula.org/pdf/5.5/opennebula_5.5_integration_guide.pdf"
+- - "5.6"
+  - "http://docs.opennebula.pro/pdf/one-addons-5.6.pdf"
+
