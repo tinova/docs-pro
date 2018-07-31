@@ -31,7 +31,12 @@ author = 'OpenNebula Systems'
 
 site_conf = yaml.load(os.popen('git show origin/one-5.6:source/site_conf.yml'))
 versions = site_conf['versions']
-#downloads = site_conf['downloads']
+downloads = site_conf['downloads']
+
+# Github path
+github_repo   = "https://github.com/OpenNebula/docs-pro"
+github_branch = "master"
+
 
 # The short X.Y version
 version = '5.6'
@@ -79,6 +84,7 @@ language = None
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
 exclude_patterns = []
+html_show_copyright = False
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -96,6 +102,7 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 # html_theme_options = {}
+html_theme_options = {'logo_only': True}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -105,7 +112,7 @@ html_style = 'css/opennebula.css'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "opennebula-white-addons.png"
+html_logo = "opennebula-white_addons.png"
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -128,6 +135,8 @@ html_sidebars = {
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'OpenNebulaExtensionsdoc'
 
+# If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
+html_show_sphinx = False
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -153,9 +162,10 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'OpenNebula_Extensions.tex', 'OpenNebula Extensions Documentation',
-     'OpenNebula Systems', 'manual'),
+  ('index', 'one-addons-' + release + '.tex', 'vOneCloud Documentation',
+   'OpenNebula Systems', 'manual'),
 ]
+
 
 
 # -- Options for manual page output ------------------------------------------
