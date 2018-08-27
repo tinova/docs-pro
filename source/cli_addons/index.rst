@@ -10,3 +10,4 @@ OpenNebula CLI Addons
    Overview <overview>
    Installation <install>
    OneZone ServerSync addon <onezone_serversync>
+   OneVcenter Cleartags addon <vcenter_cleartags>
