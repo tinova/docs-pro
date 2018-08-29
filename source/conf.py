@@ -173,7 +173,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'opennebula', 'OpenNebula Extensions Documentation',
+    (master_doc, 'opennebula', 'OpenNebula Enterprise Add-ons Documentation',
      [author], 1)
 ]
 
@@ -184,7 +184,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'OpenNebulaExtensions', 'OpenNebula Extensions Documentation',
+    (master_doc, 'OpenNebulaExtensions', 'OpenNebula Enterprise Add-ons Documentation',
      author, 'OpenNebulaExtensions', 'One line description of project.',
      'Miscellaneous'),
 ]
