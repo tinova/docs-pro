@@ -1,5 +1,5 @@
 ================================================================================
-OpenNebula |version| Extensions Documentation
+OpenNebula |version| Enterprise Add-ons Documentation
 ================================================================================
 
 .. _entry_point:
