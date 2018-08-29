@@ -162,7 +162,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'one-addons-' + release + '.tex', 'vOneCloud Documentation',
+  ('index', 'one-addons-' + release + '.tex', 'OpenNebula 5.6-master Enterprise Add-ons Documentation',
    'OpenNebula Systems', 'manual'),
 ]
 
@@ -184,7 +184,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'OpenNebulaExtensions', 'OpenNebula Extensions Documentation',
+    (master_doc, 'OpenNebulaExtensions', 'OpenNebula 5.6 Enterprise Add-ons Documentation',
      author, 'OpenNebulaExtensions', 'One line description of project.',
      'Miscellaneous'),
 ]
