@@ -9,4 +9,4 @@ OpenNebula Enterprise Add-ons
 
    Overview <overview>
    Installation <install>
-   OneZone ServerSync addon <onezone_serversync>
+   OneZone ServerSync <onezone_serversync>
