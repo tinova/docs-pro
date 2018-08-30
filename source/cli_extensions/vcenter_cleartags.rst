@@ -7,7 +7,7 @@ OneVcenter Cleartags
 Overview
 ================================================================================
 
-This addon is designed to remove some VMWare Virtual Machine attributes that will conflict with some operations (like re-importing a VM).
+This extension is designed to remove some VMWare Virtual Machine attributes that will conflict with some operations (like re-importing a VM).
 These are the attributes that will be removed:
 -opennebula.vm.running
 -opennebula.vm.id
