@@ -9,5 +9,5 @@ OpenNebula Enterprise Add-ons
 
    Overview <overview>
    Installation <install>
-   OneZone ServerSync addon <onezone_serversync>
-   OneVcenter Cleartags addon <vcenter_cleartags>
+   OneZone ServerSync <onezone_serversync>
+   OneVcenter Cleartags <vcenter_cleartags>
