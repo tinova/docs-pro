@@ -140,6 +140,8 @@ html_show_sphinx = False
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_logo = "_static/opennebula.png"
+
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
