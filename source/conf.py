@@ -35,7 +35,7 @@ downloads = site_conf['downloads']
 
 # Github path
 github_repo   = "https://github.com/OpenNebula/docs-pro"
-github_branch = "master"
+github_branch = "one-5.6"
 
 
 # The short X.Y version
