@@ -39,9 +39,9 @@ github_branch = "master"
 
 
 # The short X.Y version
-version = '5.6'
+version = '5.6.1'
 # The full version, including alpha/beta/rc tags
-release = '5.6'
+release = '5.6.1i'
 
 rst_epilog = '.. |version| replace:: %s' % version
 
@@ -162,7 +162,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'one-addons-' + release + '.tex', 'vOneCloud Documentation',
+  ('index', 'one-addons-' + release + '.tex', 'OpenNebula 5.6-master Enterprise Add-ons Documentation',
    'OpenNebula Systems', 'manual'),
 ]
 
