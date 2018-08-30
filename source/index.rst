@@ -7,7 +7,7 @@ OpenNebula |version| Enterprise Add-ons Documentation
 .. toctree::
    :maxdepth: 2
 
-   OpenNebula CLI Extensions <cli_addons/index>
+   OpenNebula CLI Extensions <cli_extensions/index>
 
 .. raw:: html
    :file: toc.html

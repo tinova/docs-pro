@@ -1,4 +1,4 @@
-.. _cli_addons_index:
+.. _cli_extensions_index:
 
 ================================================================================
 OpenNebula Enterprise Add-ons
