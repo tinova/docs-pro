@@ -39,9 +39,9 @@ github_branch = "master"
 
 
 # The short X.Y version
-version = '5.6.1'
+version = '5.6'
 # The full version, including alpha/beta/rc tags
-release = '5.6.1i'
+release = '5.6.1'
 
 rst_epilog = '.. |version| replace:: %s' % version
 
