@@ -1,7 +1,7 @@
 .. _cli_extensions_index:
 
 ================================================================================
-OpenNebula Enterprise Add-ons 
+OpenNebula Enterprise Extensions 
 ================================================================================
 
 .. toctree::
