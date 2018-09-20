@@ -1,3 +1,4 @@
 build
 *pyc
 source/toc.html
+source/cli_extensions/changelog.rst
