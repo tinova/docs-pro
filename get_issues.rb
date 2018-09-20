@@ -11,7 +11,7 @@ def get_milestone_number(title)
         end
     end
 end
- 
+
 options = {}
 ARGV.options do |opts|
   script_name = File.basename($0)

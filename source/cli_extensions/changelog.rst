@@ -1,101 +1,41 @@
-Resolved Issues in 5.6
+Resolved Issues in 5.6.1
 --------------------------------------------------------------------------------
 
-The following features has been added in 5.6
+The following features has been added in 5.6.1
 
-- `Dummy driver should create users with dummy as a default driver <https://github.com/OpenNebula/one/issues/2244>`__.
-- `Live Migration --enforce default in Sunstone <https://github.com/OpenNebula/one/issues/2202>`__.
-- `Differents monitor intervals <https://github.com/OpenNebula/one/issues/2192>`__.
-- `Do onehost flush command more configurable <https://github.com/OpenNebula/one/issues/2153>`__.
-- `Configurable "Keep me logged in" option in Sunstone <https://github.com/OpenNebula/one/issues/2146>`__.
-- `Docker Machine plugin packaging <https://github.com/OpenNebula/one/issues/2065>`__.
-- `Configurable cleanup of empty bridge <https://github.com/OpenNebula/one/issues/2043>`__.
-- `Extend access checks to Security Groups referenced by a VM <https://github.com/OpenNebula/one/issues/1976>`__.
-- `Non-persistent IMAGE even when DEFAULT_IMAGE_PERSISTENT_NEW=YES <https://github.com/OpenNebula/one/issues/1960>`__.
-- `onezone show $zone_id -x show HA & FEDERATION SYNC STATUS <https://github.com/OpenNebula/one/issues/1943>`__.
-- `Configurable XMLRPC connection timeout in Ruby OCA  <https://github.com/OpenNebula/one/issues/1918>`__.
-- `Driver fs_lvm. method resize has been implemented <https://github.com/OpenNebula/one/pull/1917>`__.
-- `setuid/setgid for VM Templates <https://github.com/OpenNebula/one/issues/1913>`__.
-- `Allow to resize a disk in the cloud view <https://github.com/OpenNebula/one/issues/1910>`__.
-- `Setuid/Setgid for VM Templates <https://github.com/OpenNebula/one/issues/1897>`__.
-- `Full debug XMLRPC parameter information in log <https://github.com/OpenNebula/one/issues/1885>`__.
-- `vCenter import templates/networks/images improved <https://github.com/OpenNebula/one/issues/1884>`__.
-- `Allow vlan range notation in ovs <https://github.com/OpenNebula/one/pull/1879>`__.
-- `Let ACL VDC rules to be configurable by admins. <https://github.com/OpenNebula/one/issues/1872>`__.
-- `Ask user to overwrite login token <https://github.com/OpenNebula/one/issues/1871>`__.
-- `LDAP authentication server groups <https://github.com/OpenNebula/one/issues/1870>`__.
-- `Support base EL7 qemu-kvm <https://github.com/OpenNebula/one/issues/1867>`__.
-- `vCenter cache improvements <https://github.com/OpenNebula/one/issues/1835>`__.
-- `vCenter name object hash <https://github.com/OpenNebula/one/issues/1808>`__.
-- `Review network drivers parameters <https://github.com/OpenNebula/one/issues/1807>`__.
-- `vcenter import datastores improved <https://github.com/OpenNebula/one/issues/1804>`__.
-- `Evaluate the effect of re-introducing oned cache of pool objects <https://github.com/OpenNebula/one/issues/1792>`__.
-- `Add support for IOPs attributes for attach disks <https://github.com/OpenNebula/one/issues/1769>`__.
-- `Disable PolicyKit on C7 KVM nodes <https://github.com/OpenNebula/one/issues/1768>`__.
-- `Improve vcenter driver cache <https://github.com/OpenNebula/one/issues/1767>`__.
-- `vcenter vm, get_one_item with id <https://github.com/OpenNebula/one/issues/1757>`__.
-- `Configurable VNC import options <https://github.com/OpenNebula/one/issues/1754>`__.
-- `Configuration option in sunstone views to hide monitoring and attribute information <https://github.com/OpenNebula/one/issues/1742>`__.
-- `Improve systemd service scripts <https://github.com/OpenNebula/one/issues/1737>`__.
-- `Add state index to VM pool to speedup state based queries <https://github.com/OpenNebula/one/issues/1709>`__.
-- `Support shared TM with local system DS <https://github.com/OpenNebula/one/issues/1694>`__.
-- `Ceph EC support <https://github.com/OpenNebula/one/issues/1685>`__.
-- `Integrate Addon of hybrid cloud into One  <https://github.com/OpenNebula/one/issues/1661>`__.
-- `Vcenter driver Import rework <https://github.com/OpenNebula/one/issues/1653>`__.
-- `Update gem dependencies <https://github.com/OpenNebula/one/issues/1641>`__.
-- `Make ipset size configurable <https://github.com/OpenNebula/one/issues/1574>`__.
-- `add DEFAULT_ATTACH_IO when attaching a disk <https://github.com/OpenNebula/one/issues/1570>`__.
-- `Update bower dependencies <https://github.com/OpenNebula/one/issues/1565>`__.
-- `Time relative scheduled actions <https://github.com/OpenNebula/one/issues/1548>`__.
-- `Display Quotas in Cloud View <https://github.com/OpenNebula/one/issues/1546>`__.
-- `Better Cloud View admin tabs <https://github.com/OpenNebula/one/issues/1545>`__.
-- `Adjust vCenter Network Model <https://github.com/OpenNebula/one/issues/1541>`__.
-- `Import multi-cluster networks <https://github.com/OpenNebula/one/issues/1538>`__.
+- `Update Host hook triggers to include all possible states <https://github.com/OpenNebula/one/issues/2356>`__.
+- `Add debug information to vCenter drivers (stacktrace) <https://github.com/OpenNebula/one/issues/2341>`__.
+- `Revamp VM update dialog <https://github.com/OpenNebula/one/issues/2328>`__.
+- `Cloud View Admin Panels revamp <https://github.com/OpenNebula/one/issues/2327>`__.
+- `EC2 driver support for oneprovision <https://github.com/OpenNebula/one/issues/2291>`__.
+- `Re-evaluate the actions that can be supported by a Virtual Router. <https://github.com/OpenNebula/one/issues/2260>`__.
+- `New Quota - RUNNING_MEMORY <https://github.com/OpenNebula/one/issues/2228>`__.
+- `Achieved a paginated view in all cli “list” operations. <https://github.com/OpenNebula/one/issues/2183>`__.
+- `Option to append IP from caller in logs <https://github.com/OpenNebula/one/issues/2150>`__.
+- `vCenter importer: Wilds integration  <https://github.com/OpenNebula/one/issues/2140>`__.
+- `Support for addons on the CLI <https://github.com/OpenNebula/one/issues/2127>`__.
+- `Keep BOOT state for managed VMs until the running state is confirmed <https://github.com/OpenNebula/one/issues/994>`__.
 
-The following bugs has been solved in 5.6
+The following bugs has been solved in 5.6.1
 
-- `Untranslated dataTable strings <https://github.com/OpenNebula/one/issues/2277>`__.
-- `Missing scrub_rb in Gemfile.locks <https://github.com/OpenNebula/one/issues/2272>`__.
-- `PHYDEV should not be mandatory for ovswitch <https://github.com/OpenNebula/one/issues/2241>`__.
-- `Imposible to update user group settings <https://github.com/OpenNebula/one/issues/2225>`__.
-- `Zero LVM space <https://github.com/OpenNebula/one/issues/2217>`__.
-- `Action script fs_lvm/resize not executable <https://github.com/OpenNebula/one/issues/2212>`__.
-- `Problem with zonepool after upgrade <https://github.com/OpenNebula/one/issues/2209>`__.
-- `Oneflow not working after upgrading from 5.4.* to 5.5.80 <https://github.com/OpenNebula/one/issues/2198>`__.
-- `Current snapshot is backing itself (backing store is self-referential) <https://github.com/OpenNebula/one/issues/2189>`__.
-- `Unable to update IPv6 Only network attributes <https://github.com/OpenNebula/one/issues/2188>`__.
-- `Consistent state naming for VMs <https://github.com/OpenNebula/one/issues/2160>`__.
-- `OpenNebula Federation not working with sqlite <https://github.com/OpenNebula/one/issues/2144>`__.
-- `Show IPv6 Address in Network tab Sunstone when IPv6 only <https://github.com/OpenNebula/one/issues/2139>`__.
-- `incorrect error message for file not found <https://github.com/OpenNebula/one/issues/2109>`__.
-- `fs datastore export with valid metadata <https://github.com/OpenNebula/one/issues/2101>`__.
-- `oneuser passwd command error message improvement <https://github.com/OpenNebula/one/issues/2064>`__.
-- `XML containing single quotes in any attribute may break DB related tools <https://github.com/OpenNebula/one/issues/2042>`__.
-- `Missing xmlrpc gem on Ruby >= 2.4 <https://github.com/OpenNebula/one/issues/2017>`__.
-- `Drivers' action scripts may not fail on error <https://github.com/OpenNebula/one/issues/2010>`__.
-- `Systemd service too aggressive with restart on failure <https://github.com/OpenNebula/one/issues/2009>`__.
-- `SSH or LocalCommand hangs on large stderr <https://github.com/OpenNebula/one/issues/1964>`__.
-- `vCenter morefs (Managed Object References) are not correctly checked <https://github.com/OpenNebula/one/issues/1951>`__.
-- `Sunstone thinks the unit of the image size is GB when it's actually MB. <https://github.com/OpenNebula/one/issues/1949>`__.
-- `[bug] Sunstone ignored the SIZE parameter of a DISK in a VM template <https://github.com/OpenNebula/one/issues/1937>`__.
-- `opennebula deletion of logdb table is not chunked and delays startup <https://github.com/OpenNebula/one/issues/1927>`__.
-- `Import wild VMs in vCenter shouldn't check datastore capacity <https://github.com/OpenNebula/one/issues/1880>`__.
-- `Tokens should not be used to authenticate with external drivers <https://github.com/OpenNebula/one/issues/1869>`__.
-- `Button for vnc and spice is not displayed <https://github.com/OpenNebula/one/issues/1851>`__.
-- `Add support for PowerPC CPUs <https://github.com/OpenNebula/one/pull/1850>`__.
-- `Improve error message when Import Wild or VM Template with disks without back reference <https://github.com/OpenNebula/one/issues/1841>`__.
-- `Improve error messages in vCenter driver <https://github.com/OpenNebula/one/issues/1826>`__.
-- `Offending XML with provided XSD <https://github.com/OpenNebula/one/issues/1821>`__.
-- `vcenter monitoring <https://github.com/OpenNebula/one/issues/1793>`__.
-- `Mysql database name problem <https://github.com/OpenNebula/one/issues/1741>`__.
-- `EUI-64 generate wrong host identifiers  <https://github.com/OpenNebula/one/issues/1729>`__.
-- `VM import should take into account state <https://github.com/OpenNebula/one/issues/1715>`__.
-- `CPU model and live migration problem <https://github.com/OpenNebula/one/issues/1688>`__.
-- `VM cannot be assigned to vmgroup/roles in firefox <https://github.com/OpenNebula/one/issues/1674>`__.
-- `Some daemon logs are not rotated <https://github.com/OpenNebula/one/issues/1672>`__.
-- `Can't resize vm disk - [one.vm.diskresize] New disk size has to be greater than current one <https://github.com/OpenNebula/one/issues/1671>`__.
-- `Fix the build for manual pages <https://github.com/OpenNebula/one/issues/1665>`__.
-- `Check pre-migrate for SUSPENDED VMs <https://github.com/OpenNebula/one/issues/1657>`__.
-- `ip6tables not in sudoers <https://github.com/OpenNebula/one/issues/1628>`__.
-- ` Resize disk leads to qcow2 corruption  <https://github.com/OpenNebula/one/issues/1585>`__.
-- `onedb fsck breaks the resources when they contain non-ASCII chars <https://github.com/OpenNebula/one/issues/1557>`__.
+- `SSH TM disk-saveas doesn't respect snapshot ID <https://github.com/OpenNebula/one/issues/2435>`__.
+- `Ceph disk-saveas doesn't respect snapshot ID <https://github.com/OpenNebula/one/issues/2429>`__.
+- `Unable to update the Running Memory quota <https://github.com/OpenNebula/one/issues/2428>`__.
+- `OPENNEBULA_MANAGED deleted when updating a VM Template <https://github.com/OpenNebula/one/issues/2423>`__.
+- `Errors with restricted attributes when instantiate a VM using Java API <https://github.com/OpenNebula/one/issues/2402>`__.
+- `Onehost sync should ignore vCenter hosts <https://github.com/OpenNebula/one/issues/2398>`__.
+- `Improve the dialog when attach nic or instanciated vm in network tab. <https://github.com/OpenNebula/one/issues/2394>`__.
+- `Slow monitoring of the live migrating VMs on destination host <https://github.com/OpenNebula/one/issues/2388>`__.
+- `Start script base64 enconding fails when using non utf8 characters <https://github.com/OpenNebula/one/issues/2384>`__.
+- `Not checks restricted attributes when try to attach a new disk <https://github.com/OpenNebula/one/issues/2374>`__.
+- `Syntax error in ldap_auth.rb <https://github.com/OpenNebula/one/issues/2372>`__.
+- `Unable to query VMs with non ASCII characters <https://github.com/OpenNebula/one/issues/2355>`__.
+- `"Error parsing JSON: Wrong resource type" error when creating a virtual network from Sunstone using advanced mode <https://github.com/OpenNebula/one/issues/2348>`__.
+- `vCenter Cant Import templates with ISOS <https://github.com/OpenNebula/one/issues/2329>`__.
+- `Quotas assignment error <https://github.com/OpenNebula/one/issues/2284>`__.
+- `[vCenter] Remove CDROM from imported template  <https://github.com/OpenNebula/one/issues/2274>`__.
+- `(vCenter) wait poweron/off to be performed <https://github.com/OpenNebula/one/issues/2262>`__.
+- `spurios syntax help on onehost delete  <https://github.com/OpenNebula/one/issues/2254>`__.
+- `vCenter driver migrate feedback (core) <https://github.com/OpenNebula/one/issues/2230>`__.
+- `VNC on ESXi Can Break Firewall <https://github.com/OpenNebula/one/issues/1728>`__.
+- `vCenter importer lock file stale and clash <https://github.com/OpenNebula/one/issues/1626>`__.
