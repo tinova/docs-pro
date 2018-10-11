@@ -39,16 +39,16 @@ github_branch = "master"
 
 
 # The short X.Y version
-version = '5.6.1'
+version = '5.6.2'
 # The full version, including alpha/beta/rc tags
-release = '5.6.1'
+release = '5.6.2'
 
 rst_epilog = '.. |version| replace:: %s' % version
 
 #Specific options for generating changelog, please use only single quotes
-milestone = 'Release 5.6'
+milestone = 'Release 5.6.2'
 link = 'true'
-repo = 'one'
+repo = 'docs-pro'
 
 # -- General configuration ---------------------------------------------------
 

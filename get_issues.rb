@@ -11,7 +11,7 @@ def get_milestone_number(title)
         end
     end
 end
- 
+
 options = {}
 ARGV.options do |opts|
   script_name = File.basename($0)
@@ -65,12 +65,20 @@ milestones_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/
 milestone_number = get_milestone_number(options[:milestone])
 issues_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/issues?per_page=100&state=closed&milestone=#{milestone_number}")
 issues = JSON.parse(Net::HTTP.get(issues_uri))
+if !issues.is_a?(Array)
+    puts "Error on HTTP request"
+    puts issues
+    exit -1
+end
 
+puts "Resolved Issues in #{options[:release]}\n"
+puts "--------------------------------------------------------------------------------\n"
+puts "\n"
 
-    puts "Resolved Issues in #{options[:release]}\n"
-    puts "--------------------------------------------------------------------------------\n"
-    puts "\n"
-    puts "The following features has been added in #{options[:release]}\n"
+if issues.empty?
+    puts "No new features or corrected bugs were found on this release"
+else 
+    puts "The following features have been added in #{options[:release]}\n"
     puts "\n"
     issues.each do |issue|
         if issue["labels"].to_s.include? "Type: Feature"
@@ -81,7 +89,6 @@ issues = JSON.parse(Net::HTTP.get(issues_uri))
             end
         end
     end
-
     puts "\n"
     puts "The following bugs has been solved in #{options[:release]}\n"
     puts "\n"
@@ -95,3 +102,4 @@ issues = JSON.parse(Net::HTTP.get(issues_uri))
             end
         end
     end
+end
