@@ -11,3 +11,4 @@ OpenNebula CLI Extensions
    Installation <install>
    OneZone ServerSync <onezone_serversync>
    OneVcenter Cleartags <vcenter_cleartags>
+   Changelog <changelog>
