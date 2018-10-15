@@ -49,7 +49,7 @@ rst_epilog = '.. |version| replace:: %s' % version
 milestone = 'Release 5.6.2'
 link = 'true'
 repo = 'enterprise-addons'
-access_token = '69cb84dce36ff8bad30b5ebbcd8d392a0f897d5d'
+access_token = '4f0559a8b0f99dd8a9492f1b1f232d16d1f06e3b'
 
 # -- General configuration ---------------------------------------------------
 
