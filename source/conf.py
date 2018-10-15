@@ -48,7 +48,8 @@ rst_epilog = '.. |version| replace:: %s' % version
 #Specific options for generating changelog, please use only single quotes
 milestone = 'Release 5.6.2'
 link = 'true'
-repo = 'docs-pro'
+repo = 'enterprise-addons'
+access_token = '17449471702f2b7b97889cbb9fdd71b8ec014cbb'
 
 # -- General configuration ---------------------------------------------------
 
