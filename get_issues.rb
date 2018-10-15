@@ -22,6 +22,7 @@ ARGV.options do |opts|
   opts.on('-m', '--milestone STR', String, "Milestone name" )  { |v| options[:milestone] = v }
   opts.on('-r', '--repo STR', String, "Repository" )  { |v| options[:repo] = v }
   opts.on('-v', '--release STR', String, "Release name" )  { |v| options[:release] = v }
+  opts.on('-t', '--token STR', String, "Access Token [Optional]" )  { |v| options[:release] = v }
   opts.on('-f', '--config-file STR', String, "Path to conf.py" )  { |v| options[:conf] = v }
   opts.on("-l", "--link", "Set reference link to github") do |v|
     options[:link] = v
@@ -40,6 +41,7 @@ if options.key?(:conf)
     options[:release] = configs.scan(/release = '(.*)'/)
     options[:milestone] = configs.scan(/milestone = '(.*)'/)
     options[:link] = configs.scan(/link = '(.*)'/)
+    options[:token] = configs.scan(/access_token = '(.*)'/)
 end
 
 
@@ -57,13 +59,26 @@ if options.key?(:conf)
     options[:repo] = options[:repo][0][0]
     options[:release] = options[:release][0][0]
     options[:milestone] = options[:milestone][0][0]
+    options[:token] = options[:token][0][0]
     options[:link] = true if options[:link][0][0] == "true"
 end
 
-milestones_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/milestones?per_page=100")
+if options[:token].empty?
+    milestones_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/milestones?per_page=100")
+else
+    milestones_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/milestones?per_page=100&access_token=#{options[:token]}")
+end
+puts "token = #{options[:token]}"
+    puts "empty" if options[:token].empty?
+
+puts "milest uri = #{milestones_uri}"
 @milestones = JSON.parse(Net::HTTP.get(milestones_uri))
 milestone_number = get_milestone_number(options[:milestone])
-issues_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/issues?per_page=100&state=closed&milestone=#{milestone_number}")
+if options[:token].empty?
+    issues_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/issues?per_page=100&state=closed&milestone=#{milestone_number}")
+else
+    issues_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/issues?per_page=100&state=closed&milestone=#{milestone_number}&access_token=#{options[:token]}")
+end
 issues = JSON.parse(Net::HTTP.get(issues_uri))
 if !issues.is_a?(Array)
     puts "Error on HTTP request"
