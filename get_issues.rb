@@ -68,10 +68,6 @@ if options[:token].empty?
 else
     milestones_uri = URI("https://api.github.com/repos/OpenNebula/#{options[:repo]}/milestones?per_page=100&access_token=#{options[:token]}")
 end
-puts "token = #{options[:token]}"
-    puts "empty" if options[:token].empty?
-
-puts "milest uri = #{milestones_uri}"
 @milestones = JSON.parse(Net::HTTP.get(milestones_uri))
 milestone_number = get_milestone_number(options[:milestone])
 if options[:token].empty?
