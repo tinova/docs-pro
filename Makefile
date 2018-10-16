@@ -29,7 +29,7 @@ help:
 
 html:
 	ruby generate_index.rb > source/toc.html
-	ruby get_issues.rb -c source/conf.py > source/cli_extensions/changelog.rst
+	#ruby get_issues.rb -c source/conf.py > source/cli_extensions/changelog.rst
 	# $(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	# @$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	@$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)/html" $(SPHINXOPTS) $(O)

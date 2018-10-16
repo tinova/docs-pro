@@ -1,12 +1,13 @@
 .. _cli_extensions_index:
 
 ================================================================================
-OpenNebula CLI Extensions 
+OpenNebula CLI Extensions
 ================================================================================
 
 .. toctree::
    :maxdepth: 2
 
    Overview <overview>
+   Changelog <changelog>
    Installation <install>
    OneZone ServerSync <onezone_serversync>

@@ -35,20 +35,21 @@ downloads = site_conf['downloads']
 
 # Github path
 github_repo   = "https://github.com/OpenNebula/docs-pro"
-github_branch = "master"
+github_branch = "one-5.6"
 
 
 # The short X.Y version
 version = '5.6'
 # The full version, including alpha/beta/rc tags
-release = '5.6.1'
+release = '5.6.2'
 
 rst_epilog = '.. |version| replace:: %s' % version
 
 #Specific options for generating changelog, please use only single quotes
-milestone = 'Release 5.6.1'
+milestone = 'Release 5.6.2'
 link = 'true'
-repo = 'one'
+repo = 'enterprise-addons'
+access_token = 'd3c1a7f2f716a2a69931ec5a1020aa08109e6c0d'
 
 # -- General configuration ---------------------------------------------------
 
