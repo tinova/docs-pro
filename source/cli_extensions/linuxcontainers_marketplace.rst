@@ -16,7 +16,7 @@ Usage
 
 To use this marketplace, you need to have installed **OpenNebula CLI Extensions**. Then you will need to modify **/etc/one/oned.conf** and add the following snippet under **MarketPlace Driver Behavior Configuration** section:
 
-.. prompt::
+Oned.conf section::
 
    MARKET_MAD_CONF = [
       NAME = "linuxcontainers",
