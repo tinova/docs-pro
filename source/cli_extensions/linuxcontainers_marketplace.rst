@@ -35,7 +35,5 @@ Restart OpenNebula and you are ready to add the new marketplace via Sunstone.
 Open Sunstone and go to **Storage** --> **MarketPlaces** --> **Add**. Set a custom Name and select **Linuxcontainer** as storage backend.
 
 .. image:: ../media/linuxcontainers_marketplace.png
-   :width: 800
-   :scale: 100 %
+   :width: 400
    :alt: Linuxcontainers marketplace configuration
-   :align: middle
