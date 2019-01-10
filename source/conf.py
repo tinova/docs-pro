@@ -103,7 +103,11 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 # html_theme_options = {}
-html_theme_options = {'logo_only': True}
+#html_theme_options = {'logo_only': True}
+
+html_context = {
+    'project': 'Enterprise Add-ons',
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -113,7 +117,7 @@ html_style = 'css/opennebula.css'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "opennebula-white_addons.png"
+html_logo = "_static/opennebula-white.png"
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
