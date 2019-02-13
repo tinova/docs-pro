@@ -12,4 +12,4 @@ OpenNebula CLI Extensions
    Installation <install>
    onezone serversync <onezone_serversync>
    onevcenter cleartags <vcenter_cleartags>
-   linuxcontainers marketplace <linuxcontainers_marketplace>
+   turnkeylinux marketplace <turnkeylinux_marketplace>
