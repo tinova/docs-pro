@@ -1,0 +1,17 @@
+================================================================================
+Installation
+================================================================================
+
+You should already have `enterprise repositories <https://support.opennebula.pro/hc/en-us/articles/115005122266-How-to-Use-Private-Enterprise-Repositories-for-5-6>`_ configured and a working OpenNebula's installation.
+
+Installing on Ubuntu
+--------------------------------------------------------------------------------
+
+# apt install opennebula-market-addon
+
+Installing on CentOS
+--------------------------------------------------------------------------------
+
+# yum install opennebula-market-addon
+
+
