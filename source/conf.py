@@ -26,7 +26,7 @@ import sphinx_rtd_theme
 sys.path.append(os.path.abspath('ext'))
 
 project = 'OpenNebula'
-copyright = '2018, OpenNebula Systems <contact@opennebula.org>'
+copyright = '2019, OpenNebula Systems <contact@opennebula.org>'
 author = 'OpenNebula Systems'
 
 site_conf = yaml.load(os.popen('git show origin/one-5.6:source/site_conf.yml'))
