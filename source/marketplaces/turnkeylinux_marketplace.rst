@@ -14,7 +14,7 @@ Overview
 Usage
 ================================================================================
 
-To use this marketplace, you need to have installed **OpenNebula CLI Extensions**. Then you will need to modify **/etc/one/oned.conf** and add the following snippet under **MarketPlace Driver Behavior Configuration** section:
+To use this marketplace, you need to install first **OpenNebula Market Addon**, see: :ref:`addon_market_install_guide`. Then you will need to modify **/etc/one/oned.conf** and add the following snippet under **MarketPlace Driver Behavior Configuration** section:
 
 *oned.conf* section::
 
