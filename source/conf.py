@@ -29,7 +29,7 @@ project = 'OpenNebula'
 copyright = '2019, OpenNebula Systems <contact@opennebula.org>'
 author = 'OpenNebula Systems'
 
-site_conf = yaml.load(os.popen('git show origin/one-5.6:source/site_conf.yml'))
+site_conf = yaml.load(open('site_conf.yml').read())
 versions = site_conf['versions']
 downloads = site_conf['downloads']
 
@@ -41,7 +41,7 @@ github_branch = "one-5.6"
 # The short X.Y version
 version = '5.6'
 # The full version, including alpha/beta/rc tags
-release = '5.6.2'
+release = '5.6'
 
 rst_epilog = '.. |version| replace:: %s' % version
 
@@ -164,7 +164,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'one-addons-' + release + '.tex', 'OpenNebula 5.6-master Enterprise Add-ons Documentation',
+  ('index', 'one-addons-' + release + '.tex',
+   'OpenNebula %s Enterprise Add-ons Documentation' % (version,),
    'OpenNebula Systems', 'manual'),
 ]
 
@@ -186,7 +187,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'OpenNebulaExtensions', 'OpenNebula 5.6 Enterprise Add-ons Documentation',
+    (master_doc, 'OpenNebulaExtensions', 'OpenNebula Enterprise Add-ons Documentation',
      author, 'OpenNebulaExtensions', 'One line description of project.',
      'Miscellaneous'),
 ]
