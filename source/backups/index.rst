@@ -1,7 +1,7 @@
-.. _market_addon_index:
+.. _backup_addon_index:
 
 ================================================================================
-OpenNebula Market Addon 
+OpenNebula Backup Addon 
 ================================================================================
 
 .. toctree::
@@ -10,4 +10,4 @@ OpenNebula Market Addon
    Overview <overview>
    Changelog <changelog>
    Installation <install>
-   turnkeylinux marketplace <turnkeylinux_marketplace>
+   Backups addon <backup_addon>

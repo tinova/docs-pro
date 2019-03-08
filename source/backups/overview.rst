@@ -2,7 +2,7 @@
 Overview
 ================================================================================
 
-OpenNebula's Market Addon provides new marketplaces to use with OpenNebula. This addon will give access to new appliances and OS images.
+This addon provides easy backups for several components on OpenNebula.
 
 How Should I Read This Chapter
 ================================================================================

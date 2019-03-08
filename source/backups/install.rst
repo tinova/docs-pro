@@ -1,4 +1,4 @@
-.. _addon_market_install_guide:
+.. _addon_backup_install_guide:
 
 ================================================================================
 Installation
@@ -9,11 +9,11 @@ You should already have `enterprise repositories <https://support.opennebula.pro
 Installing on Ubuntu
 --------------------------------------------------------------------------------
 
-# apt install opennebula-market-addon
+# apt install opennebula-backup-addon
 
 Installing on CentOS
 --------------------------------------------------------------------------------
 
-# yum install opennebula-market-addon
+# yum install opennebula-backup-addon
 
 

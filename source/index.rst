@@ -9,6 +9,7 @@ OpenNebula |version| Enterprise Add-ons Documentation
 
    OpenNebula CLI Extensions <cli_extensions/index>
    OpenNebula Market Addon <marketplaces/index>
+   OpenNebula Backup Addon <backups/index>
 
 .. raw:: html
    :file: toc.html
