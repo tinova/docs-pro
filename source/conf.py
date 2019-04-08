@@ -39,7 +39,7 @@ github_branch = "master"
 
 
 # The short X.Y version
-version = '5.8.1'
+version = '5.8'
 # The full version, including alpha/beta/rc tags
 release = '5.8.1'
 
