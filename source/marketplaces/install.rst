@@ -9,11 +9,11 @@ You should already have `enterprise repositories <https://support.opennebula.pro
 Installing on Ubuntu
 --------------------------------------------------------------------------------
 
-# apt install opennebula-market-addon
+# apt install opennebula-addon-markets
 
 Installing on CentOS
 --------------------------------------------------------------------------------
 
-# yum install opennebula-market-addon
+# yum install opennebula-addon-markets
 
 
