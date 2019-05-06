@@ -1,7 +1,7 @@
 Resolved Issues in 5.8.2
 --------------------------------------------------------------------------------
 
-No new features or corrected bugs were found on this release
+- Create template when downloading appliance.
 
 
 Resolved Issues in 5.8.1
