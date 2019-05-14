@@ -41,12 +41,12 @@ github_branch = "master"
 # The short X.Y version
 version = '5.8'
 # The full version, including alpha/beta/rc tags
-release = '5.8.2'
+release = '5.8.3'
 
 rst_epilog = '.. |version| replace:: %s' % version
 
 #Specific options for generating changelog, please use only single quotes
-milestone = 'Release 5.8.2'
+milestone = 'Release 5.8.3'
 link = 'true'
 repo = 'enterprise-addons'
 access_token = 'be25227911606172cf149a202e3c8f7601f2a736'
