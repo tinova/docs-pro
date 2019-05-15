@@ -164,7 +164,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'one-addons-' + release + '.tex',
+  ('index', 'one-addons-' + version + '.tex',
    'OpenNebula %s Enterprise Add-ons Documentation' % (version,),
    'OpenNebula Systems', 'manual'),
 ]
