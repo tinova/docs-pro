@@ -1,4 +1,4 @@
-.. _onezone_serversync:
+.. _turnkey_matketplace:
 
 ================================================================================
 Turnkey Linux Images Marketplace

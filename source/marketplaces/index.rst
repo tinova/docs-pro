@@ -1,7 +1,7 @@
-.. _cli_extensions_index:
+.. _marketplace_addon:
 
 ================================================================================
-OpenNebula Market Addon 
+OpenNebula Market Addon
 ================================================================================
 
 .. toctree::

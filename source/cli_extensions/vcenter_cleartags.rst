@@ -1,4 +1,4 @@
-.. _onezone_serversync:
+.. _vcenter_cleartags:
 
 ================================================================================
 onevcenter cleartags
