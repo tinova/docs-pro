@@ -8,7 +8,7 @@ CLI extensions is a feature intended to enhance OpenNebula's CLI for customers. 
 How Should I Read This Chapter
 ================================================================================
 
-This chapter should be read after the infrastructure is properly setup using `OpenNebula's Private Enterprise Repositories <https://support.opennebula.pro/hc/en-us/articles/360024280812--How-to-Use-Private-Enterprise-Repositories-for-5-8>`_. 
+This chapter should be read after the infrastructure is properly setup using `OpenNebula's Private Enterprise Repositories <https://support.opennebula.pro/hc/en-us/articles/360036929491>`_.
 
 
 Hypervisor Compatibility
