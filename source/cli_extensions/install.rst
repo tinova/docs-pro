@@ -4,7 +4,7 @@
 Installation
 ================================================================================
 
-You should already have `enterprise repositories <https://support.opennebula.pro/hc/en-us/articles/360024280812--How-to-Use-Private-Enterprise-Repositories-for-5-8>`_ configured and a working OpenNebula's installation.
+You should already have `enterprise repositories <https://support.opennebula.pro/hc/en-us/articles/360036929491>`_ configured and a working OpenNebula's installation.
 
 Installing on Ubuntu
 --------------------------------------------------------------------------------
@@ -15,5 +15,3 @@ Installing on CentOS
 --------------------------------------------------------------------------------
 
 # yum install opennebula-addon-tools
-
-
