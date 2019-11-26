@@ -1,7 +1,7 @@
-.. _onezone_serversync:
+.. _onevcenter_cleartags:
 
 ================================================================================
-onevcenter cleartags 
+onevcenter cleartags
 ================================================================================
 
 Overview
@@ -27,11 +27,9 @@ A use case example for this addon is for re-importing a VMware VM to OpenNebula.
 **vmid** is the id of the VM whose attributes will be cleared.
 
 * Un-register VM
-.. prompt:: bash $ auto
+
+  .. prompt:: bash $ auto
 
     $ onevm recover --delete-db <vmid>
+
 * Re-import VM: on the next host's monitoring cycle you will find this VM under **Wilds** tab, and it can be safely imported.
-
-
-
-
