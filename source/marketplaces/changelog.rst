@@ -1,4 +1,4 @@
-Resolved Issues in 5.10.0
+Resolved Issues in 5.10.x
 --------------------------------------------------------------------------------
 
 No new features or corrected bugs were found on this release
