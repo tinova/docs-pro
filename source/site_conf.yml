@@ -1,0 +1,8 @@
+---
+versions:
+- - '1.0'
+  - http://docs.opennebula.pro/1.0
+
+downloads:
+- - '1.0'
+  - 'http://docs.opennebula.pro/pdf/onescape-1.0.pdf'
