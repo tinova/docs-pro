@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OneScape'
-copyright = u'2019, OpenNebula Systems, <contact@opennebula.org>'
+copyright = u'2020, OpenNebula Systems, <contact@opennebula.org>'
 author = u'OpenNebula Systems'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -59,9 +59,9 @@ author = u'OpenNebula Systems'
 # built documents.
 #
 # The short X.Y version.
-version = u'1.0.0'
+version = u'0.9.80'
 # The full version, including alpha/beta/rc tags.
-release = u'1.0.0'
+release = u'0.9.80'
 
 site_conf = yaml.load(open('site_conf.yml').read())
 versions = site_conf['versions']
