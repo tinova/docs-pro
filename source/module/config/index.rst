@@ -1,8 +1,8 @@
 .. _mod_config:
 
-====================
-Configuration Module
-====================
+===============================
+Configuration Management Module
+===============================
 
 .. toctree::
    :maxdepth: 2
