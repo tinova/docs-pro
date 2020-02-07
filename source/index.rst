@@ -3,7 +3,7 @@ OpenNebula OneScape |version|
 
 **OneScape** is commercial enterprise extensions to the open-source OpenNebula which aims to provide means to simplify maintenance, management and upgrade of the OpenNebula deployments. It's an innovative and independent component with an ambition to evolve into the central control, maintenance and monitoring point of the installation. It consists of a growing set of modules which provide essential functionality for the enterprise environments or improve the experience for the specific part of maintenance workflow.
 
-Current features are limited to managing :ref:`configuration files <mod_config>`.
+Current features are limited to managing :ref:`configuration files <mod_config>` and generating :ref:`diagnostic bundle <mod_support>`.
 
 .. important::
 
@@ -16,5 +16,3 @@ Current features are limited to managing :ref:`configuration files <mod_config>`
    Installation <install/install>
    Configuration Management Module <module/config/index>
    Support Module <module/support/index>
-
-Note: Past enterprise add-ons were open-sourced and are now part of OpenNebula since release 5.10.2 (see, `CLI extensions <https://docs.opennebula.org/latest/...>`__ and `TurnKey Linux Marketplace <https://docs.opennebula.org/latest/...>`__) and shipped within common packages.
