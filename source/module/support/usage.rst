@@ -36,7 +36,7 @@ Please **attach this file to the support ticket**.
 
 The tool prints all actions, based on which you can decide if you want to provide such a bundle to the support team. Example full output:
 
-.. prompt:: bash $ auto
+.. code-block:: bash
 
     $ sudo onesupport
         ___  _ __   ___

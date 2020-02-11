@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'OneScape'
+project = u'OpenNebula OneScape'
 copyright = u'2020, OpenNebula Systems, <contact@opennebula.org>'
 author = u'OpenNebula Systems'
 
@@ -173,7 +173,9 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'OneScape.tex', u'OneScape Documentation',
+    (master_doc,
+     'onescape-' + version + '.tex',
+     u'OpenNebula OneScape %s Documentation' % (version,),
      u'OpenNebula Systems', 'manual'),
 ]
 

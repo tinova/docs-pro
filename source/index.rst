@@ -9,10 +9,15 @@ Current features are limited to managing :ref:`configuration files <mod_config>`
 
     You need to have valid **support subscription** to get access this component. Follow the available options of `Enteprise Support Subscriptions <https://opennebula.systems/support/>`__.
 
+.. _entry_point:
+
 .. toctree::
    :maxdepth: 2
 
    Release Notes <release_notes/index>
-   Installation <install/install>
+   Installation <install/index>
    Configuration Management Module <module/config/index>
    Support Module <module/support/index>
+
+.. raw:: html
+   :file: toc.html
